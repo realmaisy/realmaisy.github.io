@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on 岛风依旧</title>
+    <link>http://maisy.vip/tags/python/</link>
+    <description>Recent content in python on 岛风依旧</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 24 Mar 2020 16:14:13 +0800</lastBuildDate>
+    
+	<atom:link href="http://maisy.vip/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python内置函数Repr和eval</title>
+      <link>http://maisy.vip/post/reprandeval/</link>
+      <pubDate>Tue, 24 Mar 2020 16:14:13 +0800</pubDate>
+      
+      <guid>http://maisy.vip/post/reprandeval/</guid>
+      <description>python比较有意思的两个内置函数，随便记录一下 repr 返回包含一个对象的可打印表示形式的字符串。 对于许多类型来说，该函数会尝试返回的字符串将会</description>
+    </item>
+    
+    <item>
+      <title>Pip换源</title>
+      <link>http://maisy.vip/post/pip%E6%8D%A2%E6%BA%90/</link>
+      <pubDate>Sun, 19 Jan 2020 11:24:32 +0800</pubDate>
+      
+      <guid>http://maisy.vip/post/pip%E6%8D%A2%E6%BA%90/</guid>
+      <description>window 在用户目录下C:\Users\maisy\新建文件夹pip ，然后在该文件夹下新建文件PIP.INI 完整路径：C:\Users\maisy\</description>
+    </item>
+    
+  </channel>
+</rss>

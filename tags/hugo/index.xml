@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on 岛风依旧</title>
+    <link>http://maisy.vip/tags/hugo/</link>
+    <description>Recent content in Hugo on 岛风依旧</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Sep 2019 10:59:45 +0800</lastBuildDate>
+    
+	<atom:link href="http://maisy.vip/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>博客部署的一些坑</title>
+      <link>http://maisy.vip/post/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
+      <pubDate>Mon, 16 Sep 2019 10:59:45 +0800</pubDate>
+      
+      <guid>http://maisy.vip/post/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid>
+      <description>hugo生成日志文件 生成md文件命令 hugo new name.md 特殊属性 draft: true 表示当前文件是草稿的意思，正式发布的时候会跳过该文件，需要改为draft: false 发布命令 hugo</description>
+    </item>
+    
+  </channel>
+</rss>

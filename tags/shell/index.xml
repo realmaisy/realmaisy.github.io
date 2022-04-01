@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shell on 岛风依旧</title>
+    <link>http://maisy.vip/tags/shell/</link>
+    <description>Recent content in Shell on 岛风依旧</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 28 Oct 2019 17:12:45 +0800</lastBuildDate>
+    
+	<atom:link href="http://maisy.vip/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>shell脚本入门</title>
+      <link>http://maisy.vip/post/shell%E8%84%9A%E6%9C%AC%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 28 Oct 2019 17:12:45 +0800</pubDate>
+      
+      <guid>http://maisy.vip/post/shell%E8%84%9A%E6%9C%AC%E5%85%A5%E9%97%A8/</guid>
+      <description>一、执行方式 shell脚本的名称可以任意，但是通常会加上.sh结尾，以表示是一个脚本文件。 1 2 3 4 5 # 用bash解释器直接运行shell脚本</description>
+    </item>
+    
+  </channel>
+</rss>

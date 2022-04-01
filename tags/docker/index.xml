@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on 岛风依旧</title>
+    <link>http://maisy.vip/tags/docker/</link>
+    <description>Recent content in docker on 岛风依旧</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 21 May 2020 14:20:11 +0800</lastBuildDate>
+    
+	<atom:link href="http://maisy.vip/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Django应用容器化</title>
+      <link>http://maisy.vip/post/django%E5%BA%94%E7%94%A8%E5%AE%B9%E5%99%A8%E5%8C%96/</link>
+      <pubDate>Thu, 21 May 2020 14:20:11 +0800</pubDate>
+      
+      <guid>http://maisy.vip/post/django%E5%BA%94%E7%94%A8%E5%AE%B9%E5%99%A8%E5%8C%96/</guid>
+      <description>[TOC] 生成依赖文件 在pycharm中，打开Terminal，输入如下命令 1 pip freeze&amp;gt;requirements.txt 编写Dockerfile 1 2 3 4 5 6 7 8 9 10 11 12 13 14 FROM python:3.7 LABEL maintainer=&amp;#34;maisy.vip&amp;#34; RUN apt-get update</description>
+    </item>
+    
+    <item>
+      <title>Docker入门</title>
+      <link>http://maisy.vip/post/docker%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 23 Mar 2020 15:40:11 +0800</pubDate>
+      
+      <guid>http://maisy.vip/post/docker%E5%85%A5%E9%97%A8/</guid>
+      <description>安装 Ubuntu18.04 配置了阿里源 1 2 3 4 5 6 # 安装命令 apt install docker.io # 查看版本信息 docker -v # Docker version 19.03.6, build 369ce74a3c 这个安装命令比较简单，但是版本可能不是最新的，区别不大。 更换国内</description>
+    </item>
+    
+  </channel>
+</rss>

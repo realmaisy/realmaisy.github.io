@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://maisy.vip/sitemap.xml
