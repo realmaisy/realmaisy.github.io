@@ -1,2 +1,0 @@
-# realmaisy.github.io
-blog
