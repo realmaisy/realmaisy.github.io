@@ -6,10 +6,19 @@
     <description>Recent content in 技术 on 岛风依旧</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 May 2020 14:20:11 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 26 Nov 2021 14:01:45 +0800</lastBuildDate>
     
 	<atom:link href="http://maisy.vip/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ubuntu20.04挂载网络共享目录</title>
+      <link>http://maisy.vip/post/ubuntu20.04%E6%8C%82%E8%BD%BD%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E7%9B%AE%E5%BD%95/</link>
+      <pubDate>Fri, 26 Nov 2021 14:01:45 +0800</pubDate>
+      
+      <guid>http://maisy.vip/post/ubuntu20.04%E6%8C%82%E8%BD%BD%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E7%9B%AE%E5%BD%95/</guid>
+      <description>背景 两台服务器，A上进行打包，产生的固件存放在目录/opt/UpgradePackage B服务器部署了一个Django服务，需要在上面展示固</description>
+    </item>
     
     <item>
       <title>Django应用容器化</title>
@@ -17,7 +26,7 @@
       <pubDate>Thu, 21 May 2020 14:20:11 +0800</pubDate>
       
       <guid>http://maisy.vip/post/django%E5%BA%94%E7%94%A8%E5%AE%B9%E5%99%A8%E5%8C%96/</guid>
-      <description>[TOC] 生成依赖文件 在pycharm中，打开Terminal，输入如下命令 1 pip freeze&amp;gt;requirements.txt 编写Dockerfile 1 2 3 4 5 6 7 8 9 10 11 12 13 14 FROM python:3.7 LABEL maintainer=&amp;#34;maisy.vip&amp;#34; RUN apt-get update</description>
+      <description>生成依赖文件 在pycharm中，打开Terminal，输入如下命令 1 pip freeze&amp;gt;requirements.txt 编写Dockerfile 1 2 3 4 5 6 7 8 9 10 11 12 13 14 FROM python:3.7 LABEL maintainer=&amp;#34;maisy.vip&amp;#34; RUN apt-get update \</description>
     </item>
     
     <item>

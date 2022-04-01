@@ -17,7 +17,7 @@
       <pubDate>Thu, 21 May 2020 14:20:11 +0800</pubDate>
       
       <guid>http://maisy.vip/post/django%E5%BA%94%E7%94%A8%E5%AE%B9%E5%99%A8%E5%8C%96/</guid>
-      <description>[TOC] 生成依赖文件 在pycharm中，打开Terminal，输入如下命令 1 pip freeze&amp;gt;requirements.txt 编写Dockerfile 1 2 3 4 5 6 7 8 9 10 11 12 13 14 FROM python:3.7 LABEL maintainer=&amp;#34;maisy.vip&amp;#34; RUN apt-get update</description>
+      <description>生成依赖文件 在pycharm中，打开Terminal，输入如下命令 1 pip freeze&amp;gt;requirements.txt 编写Dockerfile 1 2 3 4 5 6 7 8 9 10 11 12 13 14 FROM python:3.7 LABEL maintainer=&amp;#34;maisy.vip&amp;#34; RUN apt-get update \</description>
     </item>
     
     <item>

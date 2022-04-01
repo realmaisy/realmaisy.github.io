@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Jenkins添加节点 - 岛风依旧</title>
+  <title>Ubuntu20.04挂载网络共享目录 - 岛风依旧</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="maisy" /><meta name="description" content="步骤： Jenkins &amp;gt; 节点列表 &amp;gt; 新建节点 输入节点名称，选择固定节点 添加节点 启动方式 选择 通过java web启动代理点，点击保存 具体配置 下载 slave-agent.jnlp 和 agent." />
+<meta name="author" content="maisy" /><meta name="description" content="背景 两台服务器，A上进行打包，产生的固件存放在目录/opt/UpgradePackage B服务器部署了一个Django服务，需要在上面展示固" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.62.1 with theme even" />
 
 
-<link rel="canonical" href="http://maisy.vip/post/jekins%E6%B7%BB%E5%8A%A0%E8%8A%82%E7%82%B9/" />
+<link rel="canonical" href="http://maisy.vip/post/ubuntu20.04%E6%8C%82%E8%BD%BD%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E7%9B%AE%E5%BD%95/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -38,23 +38,23 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Jenkins添加节点" />
-<meta property="og:description" content="步骤： Jenkins &gt; 节点列表 &gt; 新建节点 输入节点名称，选择固定节点 添加节点 启动方式 选择 通过java web启动代理点，点击保存 具体配置 下载 slave-agent.jnlp 和 agent." />
+<meta property="og:title" content="Ubuntu20.04挂载网络共享目录" />
+<meta property="og:description" content="背景 两台服务器，A上进行打包，产生的固件存放在目录/opt/UpgradePackage B服务器部署了一个Django服务，需要在上面展示固" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://maisy.vip/post/jekins%E6%B7%BB%E5%8A%A0%E8%8A%82%E7%82%B9/" />
-<meta property="article:published_time" content="2019-10-27T11:20:36+08:00" />
-<meta property="article:modified_time" content="2019-10-27T11:20:36+08:00" />
-<meta itemprop="name" content="Jenkins添加节点">
-<meta itemprop="description" content="步骤： Jenkins &gt; 节点列表 &gt; 新建节点 输入节点名称，选择固定节点 添加节点 启动方式 选择 通过java web启动代理点，点击保存 具体配置 下载 slave-agent.jnlp 和 agent.">
-<meta itemprop="datePublished" content="2019-10-27T11:20:36&#43;08:00" />
-<meta itemprop="dateModified" content="2019-10-27T11:20:36&#43;08:00" />
-<meta itemprop="wordCount" content="172">
+<meta property="og:url" content="http://maisy.vip/post/ubuntu20.04%E6%8C%82%E8%BD%BD%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E7%9B%AE%E5%BD%95/" />
+<meta property="article:published_time" content="2021-11-26T14:01:45+08:00" />
+<meta property="article:modified_time" content="2021-11-26T14:01:45+08:00" />
+<meta itemprop="name" content="Ubuntu20.04挂载网络共享目录">
+<meta itemprop="description" content="背景 两台服务器，A上进行打包，产生的固件存放在目录/opt/UpgradePackage B服务器部署了一个Django服务，需要在上面展示固">
+<meta itemprop="datePublished" content="2021-11-26T14:01:45&#43;08:00" />
+<meta itemprop="dateModified" content="2021-11-26T14:01:45&#43;08:00" />
+<meta itemprop="wordCount" content="634">
 
 
 
-<meta itemprop="keywords" content="Jenkins," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Jenkins添加节点"/>
-<meta name="twitter:description" content="步骤： Jenkins &gt; 节点列表 &gt; 新建节点 输入节点名称，选择固定节点 添加节点 启动方式 选择 通过java web启动代理点，点击保存 具体配置 下载 slave-agent.jnlp 和 agent."/>
+<meta itemprop="keywords" content="Shell,Linux," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ubuntu20.04挂载网络共享目录"/>
+<meta name="twitter:description" content="背景 两台服务器，A上进行打包，产生的固件存放在目录/opt/UpgradePackage B服务器部署了一个Django服务，需要在上面展示固"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -121,15 +121,15 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Jenkins添加节点</h1>
+      <h1 class="post-title">Ubuntu20.04挂载网络共享目录</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-10-27 </span>
+        <span class="post-time"> 2021-11-26 </span>
         <div class="post-category">
             <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
             </div>
-          <span class="more-meta"> 约 172 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 634 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -139,10 +139,11 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#heading">背景</a></li>
+    <li><a href="#heading-1">解决方案</a>
       <ul>
-        <li><a href="#heading">步骤：</a></li>
-        <li><a href="#heading-1">可能遇到的坑：</a></li>
+        <li><a href="#a">服务端设置（A机器）</a></li>
+        <li><a href="#b">客户端设置（B机器）</a></li>
       </ul>
     </li>
   </ul>
@@ -150,39 +151,87 @@
   </div>
 </div>
     <div class="post-content">
-      <h3 id="heading">步骤：</h3>
-<hr>
-<p>Jenkins &gt; 节点列表 &gt; 新建节点</p>
-<p>输入节点名称，选择固定节点</p>
-<figure>
-    <img src="/media/tianjiajiedian.png"/> <figcaption>
-            <h4>添加节点</h4>
-        </figcaption>
-</figure>
-
-<hr>
-<p>启动方式 选择 通过java web启动代理点，点击保存</p>
-<figure>
-    <img src="/media/jutipeizhi.png"/> <figcaption>
-            <h4>具体配置</h4>
-        </figcaption>
-</figure>
-
-<hr>
-<p>下载 <code>slave-agent.jnlp</code> 和 <code>agent.jar</code>，拷贝到节点服务器</p>
-<p>运行 <code>slave-agent.jnlp</code> 即可。</p>
-<figure>
-    <img src="/media/peizhislave.png"/> <figcaption>
-            <h4>配置从节点</h4>
-        </figcaption>
-</figure>
-
-<hr>
-<h3 id="heading-1">可能遇到的坑：</h3>
-<p>jenkins更换了端口，导致<code>slave-agent.jnlp</code>运行失败。</p>
-<h5 id="heading-2">解决方法：</h5>
-<p>编辑<code>slave-agent.jnlp</code>文件，替换端口为实际端口。</p>
-
+      <h2 id="heading">背景</h2>
+<p>两台服务器，A上进行打包，产生的固件存放在目录<code>/opt/UpgradePackage</code><br>
+B服务器部署了一个Django服务，需要在上面展示固件包，因为需要把A机器的目录挂载在B机器</p>
+<h2 id="heading-1">解决方案</h2>
+<p>因为两台服务器都是ubuntu系统，直接用NFS即可，在两台机器安装服务</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">apt install nfs-kernel-server
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="a">服务端设置（A机器）</h3>
+<p>编辑要共享文件夹的机器（A机器）的文件<code>/etc/exports</code>，增加要共享的文件夹</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 分享目录 主机名称或者IP(参数1，参数2）</span>
+/opt/UpgradePackage 192.168.15.63<span class="o">(</span>insecure,rw,no_root_squash,async<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>上诉命令可设置的参数如下，其中的IP地址可以使用通配符：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">rw：可读写的权限； 
+ro：只读的权限； 
+no_root_squash：登入到NFS主机的用户如果是root，该用户即拥有root权限；
+root_squash：登入NFS主机的用户如果是root，该用户权限将被限定为匿名使用者nobody； 
+all_squash：不管登陆NFS主机的用户是何权限都会被重新设定为匿名使用者nobody。 
+anonuid：将登入NFS主机的用户都设定成指定的user id，此ID必须存在于/etc/passwd中。 
+anongid：同anonuid，但是变成group ID就是了！ 
+sync：资料同步写入存储器中。 
+async：资料会先暂时存放在内存中，不会直接写入硬盘。 
+insecure：允许从这台机器过来的非授权访问。 
+</code></pre></td></tr></table>
+</div>
+</div><p>重启服务</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo systemctl restart nfs-server.service
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="b">客户端设置（B机器）</h3>
+<p>创建需要挂载到的目录</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">/home/user/UpgradePackage
+</code></pre></td></tr></table>
+</div>
+</div><p>挂载远程目录，<code>192.168.15.70</code>为A机器的地址</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo mount -t nfs 192.168.15.70:/opt/UpgradePackage /home/user/UpgradePackage
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
@@ -193,7 +242,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2019-10-27
+        2021-11-26
         
     </span>
   </p>
@@ -202,16 +251,13 @@
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/jenkins/">Jenkins</a>
+          <a href="/tags/shell/">Shell</a>
+          <a href="/tags/linux/">Linux</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/shell%E8%84%9A%E6%9C%AC%E5%85%A5%E9%97%A8/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">shell脚本入门</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
-        <a class="next" href="/post/goget/">
-            <span class="next-text nav-default">Go安装库的方法</span>
+        
+        <a class="next" href="/post/django%E5%BA%94%E7%94%A8%E5%AE%B9%E5%99%A8%E5%8C%96/">
+            <span class="next-text nav-default">Django应用容器化</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>

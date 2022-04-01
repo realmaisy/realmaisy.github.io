@@ -3,7 +3,56 @@
   
   <url>
     <loc>http://maisy.vip/categories/</loc>
-    <lastmod>2020-05-21T14:20:11+08:00</lastmod>
+    <lastmod>2021-11-26T14:01:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://maisy.vip/tags/linux/</loc>
+    <lastmod>2021-11-26T14:01:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://maisy.vip/post/</loc>
+    <lastmod>2021-11-26T14:01:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://maisy.vip/tags/shell/</loc>
+    <lastmod>2021-11-26T14:01:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://maisy.vip/tags/</loc>
+    <lastmod>2021-11-26T14:01:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://maisy.vip/post/ubuntu20.04%E6%8C%82%E8%BD%BD%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E7%9B%AE%E5%BD%95/</loc>
+    <lastmod>2021-11-26T14:01:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://maisy.vip/</loc>
+    <lastmod>2021-11-26T14:01:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://maisy.vip/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2021-11-26T14:01:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -17,34 +66,6 @@
   
   <url>
     <loc>http://maisy.vip/tags/docker/</loc>
-    <lastmod>2020-05-21T14:20:11+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://maisy.vip/post/</loc>
-    <lastmod>2020-05-21T14:20:11+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://maisy.vip/tags/</loc>
-    <lastmod>2020-05-21T14:20:11+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://maisy.vip/</loc>
-    <lastmod>2020-05-21T14:20:11+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://maisy.vip/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2020-05-21T14:20:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -109,20 +130,6 @@
   <url>
     <loc>http://maisy.vip/post/goproxy/</loc>
     <lastmod>2019-12-07T16:03:05+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://maisy.vip/tags/linux/</loc>
-    <lastmod>2019-10-28T17:12:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://maisy.vip/tags/shell/</loc>
-    <lastmod>2019-10-28T17:12:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
